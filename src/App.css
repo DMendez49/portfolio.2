@@ -1,0 +1,253 @@
+@import "index.css";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.section-top{
+  width: 100%;
+  height: 125vh; 
+  overflow: hidden;
+  position: relative;
+  background-image: url("../src/images/coder5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+  animation: slide 15s infinite;
+}
+
+.content{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content h1{
+  color: white;
+  font-size: 60px;
+  letter-spacing: 16px;
+}
+
+.content a{
+  background: #0984e3;
+  padding: 10px 24px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.sidebyside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+p {
+  font-size: 20px;
+  padding: 10px;
+  line-height: 24px;
+}
+
+@keyframes slide {
+  33%{
+    background-image: url("./images/coder2.jpg");
+  }
+  49%{
+    background-image: url("./images/coder.jpg");
+    width: 1440px;
+  }
+  63%{
+    background-image: url("./images/coder.jpg");
+  }
+  83%{
+    background-image: url("./images/SoftwareEngineer.jpg");
+  }
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 8px black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black !important;
+  border-radius: 90px !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0984e3 !important;
+  border-radius: 15px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  background: #f9f9f9;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
+
+.main-header{
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:2rem
+}
+
+.main-header h1{
+  font-size: 4reml;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.main-header h1 span {
+  color: #b50d10;
+} 
+
+.colorFont{
+  color: #000000;
+}
+
+.img {
+  width: 100%;
+}
+
+.card { 
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fs);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 2rem;
+}
+
+.card h3{
+  margin-bottom: 2rem;
+}
+
+.card img{
+  height: 400px
+}
+
+.card > div {
+  padding: 2em;
+}
+ 
+.card:nth-child(even) img{
+  order: 2;
+} 
+
+.btn{
+  display: inline-blockl;
+  background: #000;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+@media(max-width: 700px){
+  .card{
+    display: block;
+  }
+}
+
+section{
+    margin:0;
+    padding:0;
+    background: rgba(0,0,0,0,0.8);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+section .scroll{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 10px solid #fff;
+  margin-bottom: 100px;
+}
+
+section .scroll span{
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.footsie{
+  background: #0984e3;
+  height: 150px;
+}
