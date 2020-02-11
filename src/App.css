@@ -47,6 +47,11 @@ body,html{
   height: 100%;
 }
 
+/* table shadow */
+.ui.basic.table{
+  box-shadow: 0 10px 10px 0 , 0 0 0 1px #d4d4d5 !important;
+}
+/* slides */
 .section-top{
   width: 100%;
   height: 125vh; 
@@ -88,28 +93,37 @@ body,html{
   justify-content: space-evenly;
 }
 
+button{
+  box-shadow: inset 0 0 3px rgb(0, 0, 0) !important;
+}
+
 p {
   font-size: 20px;
   padding: 10px;
   line-height: 24px;
 }
 
+/* desktop view */
 @keyframes slide {
-  33%{
+  30%{
     background-image: url("./images/coder2.jpg");
+    width: 1440px;
   }
   49%{
     background-image: url("./images/coder.jpg");
     width: 1440px;
   }
-  63%{
+  65%{
     background-image: url("./images/coder.jpg");
+    width: 1440px;
   }
-  83%{
+  85%{
     background-image: url("./images/SoftwareEngineer.jpg");
+    width: 1440px;
   }
 }
 
+/* scrollbar */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 8px black;
   border-radius: 10px;
@@ -250,4 +264,60 @@ section .scroll span{
 .footsie{
   background: #0984e3;
   height: 150px;
+}
+
+.ui.card, .ui.cards>.card {
+  box-shadow: 0 10px 10px 0 , 0 0 0 1px #d4d4d5 !important;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 768px) {
+  .section-top {
+    width: 100% !important;
+  }
+
+@keyframes slide {
+  33%{
+    background-image: url("./images/coder2.jpg");
+    width: 100% !important;
+
+  }
+  49%{
+    background-image: url("./images/coder.jpg");
+    width: 1440px;
+    width: 100% !important;
+
+  }
+  63%{
+    background-image: url("./images/coder.jpg");
+    width: 100% !important;
+
+  }
+  83%{
+    background-image: url("./images/SoftwareEngineer.jpg");
+    width: 100% !important;
+    }
+  }
+
+  .content {
+    width: 100% !important;
+  }
+  .sidebyside{
+    width: 100% !important;
+  }
+  P{
+    width: 100% !important;
+  }
+  .ui.card:last-child{
+    width: 100% !important;
+  }
+  center{
+    width: 100% !important;
+  }
+  .footsie{
+    width: 100% !important;
+  }
+  body{
+    width: 100% !important;
+  }
 }

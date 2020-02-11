@@ -1,15 +1,18 @@
-import { Link, NavLink, } from 'react-router-dom';
 import React from 'react';
-import { Image, Card, Container, Button, } from "semantic-ui-react";
-import AOS from 'aos';
+import { Link, NavLink, } from 'react-router-dom';
+import { Table, Card, } from "semantic-ui-react";
+import favicon from "../images/favicon.png"
 import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Home = () => (
+
   <>
     <head>
+      <title>Portfolio</title>
       <Link rel="styleSheet" href="App.css"></Link>
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      <title>Portfolio</title>
+      <link rel="shortcut icon" type="image/png" href={favicon}></link>
     </head>
 
     <div class="section-top">
@@ -28,11 +31,13 @@ const Home = () => (
       <div class="scroll">
         <span>
           <center>
-            <Card style={cardW}
-
+            <br /><br />
+            <Card
+              link="/"
+              style={cardW}
             >
-              <p>
-                Hello my name is<p class="colorFont"> David Mendez and I am a Freelancer/Software Engineer.</p>
+              <p style={black}>
+                Hello my name is<p style={red}> David Mendez and I am a Freelancer/Software Engineer.</p>
                 I Learned the following technologies with my studies at DevPoint Labs.
             </p>
             </Card>
@@ -180,19 +185,79 @@ const Home = () => (
           </div>
         </p>
       </center>
+      <br />
       <section>
         <center>
-          <Card style={cardW}>
-            <br />
-            <p>
+          <Card
+            style={cardW}
+            link="/"
+          >
+            <p style={black}>
               I know there is alot more to learn about the following technologies.
+              but I am very proud of how far I came.
           </p>
-            <p> but I am proud of how far I came. Click "About" for more! </p>
+            <p style={black}>
+              My interest for computer science grew with my time at Instructure.
+              I was self tought when it comes to programming but I was never satisfied with my skill set.
+              I completed the folllwing courses at Salt Lake Comunity College.
+            </p>
           </Card>
         </center>
       </section>
-      <br /><br />
+      <center>
+        <p>
+          <br /><br /><br />
+          <Table
+            basic style={cardW}
+            link="/"
+          >
+            <Table.Header>
+              <Table.Row>
+                <Table.HeaderCell>Class Id:</Table.HeaderCell>
+                <Table.HeaderCell>Class Name:</Table.HeaderCell>
+              </Table.Row>
+            </Table.Header>
+            <Table.Body>
+              <Table.Row>
+                <Table.Cell>1400</Table.Cell>
+                <Table.Cell> Fundamentals Of Computer Science</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>1410</Table.Cell>
+                <Table.Cell>Object Orented programming</Table.Cell>
+              </Table.Row>
+              <Table.Row>
+                <Table.Cell>2420</Table.Cell>
+                <Table.Cell>Data Structures & Algorithms</Table.Cell>
+              </Table.Row>
+            </Table.Body>
+          </Table>
+          <br /><br />
+          <Card
+            style={cardW}
+            link="/"
+          >
+            <br />
+            <p style={black}>
+              In addition to my studies I attended a Coding bootCamp with the University Of Utah
+              at Dev Point Labs. I will continue this journey by challenging myself daily.
+            </p>
+            <p style={red}>
+              Click "About" for more!, listed above.
+            </p>
+          </Card>
+          <br /><br /> <br />
+        </p>
 
+        <h3>Schools I attended:</h3>
+        <br /><br />
+        <div class="sidebyside">
+          <img alt="build diagram" src="https://umc.utah.edu/wp-content/uploads/sites/15/2015/01/BlockU_400px.png" width="180" height="100"></img>
+          <img alt="build diagram" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2475/s300/beaker-white-256.png" width="100" height="90"></img>
+          <img alt="build diagram" src="https://i.slcc.edu/institutionalmarketing/images/logo/SLCClogo-BrandColors2015.png" width="175" height="90" ></img>
+        </div>
+        <br /> <br /> <br /> <br />
+      </center>
       {/* <br /> */}
       {/* <main class="container">
         <div data-aos="fade-left">
@@ -267,6 +332,15 @@ const Home = () => (
 
 const cardW = {
   width: "1000px",
+  backgroundColor: '#0985e3a1',
+}
+
+const red = {
+  color: "Darkred",
+}
+
+const black = {
+  color: "black",
 }
 
 
