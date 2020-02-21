@@ -47,6 +47,23 @@ export default GroupProjectsView =>
               <Button
                 color="black"
                 className="customCardlook">
+                <a href="https://github.com/DMendez49/DevPointLabs_Store" target="_blank">
+                  <img
+                    alt="build diagram"
+                    src="https://www.codemy.net/imaging/size/512x512/3_20180926131748_3c41b4169236ebb636038dd2_167843341e6d9be8377a9e335dc4b0a54948cccb_001_20180927131748_0011_dnld/codemy-studio-production/collections/learn-react-on-rails/react-on-rails-icon.jpg"
+                    height="150"
+                    width="141"
+                    >
+                  </img>
+                </a>
+              </Button>
+              <h3>DevPointLabs_Store</h3>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div>
+              <Button
+                color="black"
+                className="customCardlook">
                 <a
                   href="https://github.com/DMendez49/rails_react_Utoob" target="_blank">
                   <img
@@ -61,23 +78,6 @@ export default GroupProjectsView =>
               <h3>rails_react_Utoob</h3>
             </div>
           <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <div>
-              <Button
-                color="black"
-                className="customCardlook">
-                <a href="https://github.com/DMendez49/DevPointLabs_Store" target="_blank">
-                  <img
-                    alt="build diagram"
-                    src="https://www.codemy.net/imaging/size/512x512/3_20180926131748_3c41b4169236ebb636038dd2_167843341e6d9be8377a9e335dc4b0a54948cccb_001_20180927131748_0011_dnld/codemy-studio-production/collections/learn-react-on-rails/react-on-rails-icon.jpg"
-                    height="150"
-                    width="141"
-                  >
-                  </img>
-                </a>
-              </Button>
-              <h3>DevPointLabs_Store</h3>
-            </div>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
           </Grid>
         </Grid.Column>
       </Card>
