@@ -378,9 +378,10 @@ section .scroll{
   margin-bottom: 100px;
 }
 
-.ui.button {
-  padding: 1em .01em !important;
+.customCardlook {
+  padding: 1em .01em !important; 
 }
+
 
 section .scroll span{
   font-family: sans-serif;
@@ -519,9 +520,9 @@ height: 150px;
     height: 85px !important;
   }
 
-  .ui.button {
-    padding: 1em .01em !important;
-  }
+  .customCardlook {
+    padding: 1em .01em !important; 
+ } 
 
   .editForPhoneTwo
   img {
@@ -679,7 +680,6 @@ height: 150px;
 .blackground{
   background-repeat: no-repeat;
   background-size: 100% 100% !important;
-  /* background-color: rgb(168, 78, 78); */
   background: url(https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
   color: rgb(189, 189, 255);
 }

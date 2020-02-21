@@ -24,20 +24,24 @@ export default JavaView =>
           align="center"
         >
           <div>
-            <Button color="black">
+            <Button
+              color="black"
+              className="customCardlook">
               <a href="https://github.com/DMendez49/Connect4" target="_blank">
                 <img alt="build diagram" src="https://image.flaticon.com/icons/png/512/226/226777.png" height="150" width="140"></img>
               </a>
             </Button>
             <h3>Connect4</h3>
           </div>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
           <div>
-            <Button color="black">
+            <Button
+              color="black"
+              className="customCardlook">
               <a href="https://github.com/DMendez49/Final_Stimulator_Howw" target="_blank">
-                <img alt="build diagram" src="https://image.flaticon.com/icons/png/512/226/226777.png" 
-                height="150" 
-                width="141"
+                <img alt="build diagram" src="https://image.flaticon.com/icons/png/512/226/226777.png"
+                  height="150"
+                  width="141"
                 >
                 </img>
               </a>

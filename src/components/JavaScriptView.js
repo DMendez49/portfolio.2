@@ -25,7 +25,9 @@ export default JavaScriptView =>
             align="center"
           >
             <div>
-              <Button color="black">
+              <Button 
+              color="black"
+              className="customCardlook">
                 <a href="https://github.com/DMendez49/contextApp/tree/master/src/components" target="_blank">
                   <img alt="build diagram" src="http://pluspng.com/img-png/logo-javascript-png-file-javascript-logo-png-1052.png" 
                   height="150" 
@@ -38,7 +40,9 @@ export default JavaScriptView =>
             </div>
           <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div>
-              <Button color="black">
+              <Button 
+              color="black"
+              className="customCardlook">
                 <a href="https://github.com/DMendez49/Flash_Cards" target="_blank">
                   <img alt="build diagram" src="http://pluspng.com/img-png/logo-javascript-png-file-javascript-logo-png-1052.png"
                  height="150" 

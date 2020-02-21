@@ -27,7 +27,8 @@ export default GroupProjectsView =>
           >
             <div>
               <Button
-                color="black">
+                color="black"
+                className="customCardlook">
                 <a
                   href="https://github.com/DMendez49/Rails_HackTrips" target="_blank">
                   <img
@@ -41,10 +42,11 @@ export default GroupProjectsView =>
               </Button>
               <h3>Rails_HackTrips</h3>
             </div>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div>
               <Button
-                color="black">
+                color="black"
+                className="customCardlook">
                 <a
                   href="https://github.com/DMendez49/rails_react_Utoob" target="_blank">
                   <img
@@ -58,10 +60,11 @@ export default GroupProjectsView =>
               </Button>
               <h3>rails_react_Utoob</h3>
             </div>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div>
               <Button
-                color="black">
+                color="black"
+                className="customCardlook">
                 <a href="https://github.com/DMendez49/DevPointLabs_Store" target="_blank">
                   <img
                     alt="build diagram"

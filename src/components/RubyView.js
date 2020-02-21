@@ -23,7 +23,9 @@ export default RubyView =>
           align="center"
         >
           <div>
-            <Button color="black">
+            <Button
+              color="black"
+              className="customCardlook">
               <a href="https://github.com/DMendez49/rails_lms" target="_blank">
                 <img alt="build diagram" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ruby_logo.png"
                   height="150"
