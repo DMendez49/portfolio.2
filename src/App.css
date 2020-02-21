@@ -651,9 +651,6 @@ height: 150px;
       font-size: small;
     }
 
-    h3{
-      font-size: small;
-    }
 }
 
 .ui.selection.dropdown {
@@ -662,6 +659,11 @@ height: 150px;
 
 .cardi{
   background: linear-gradient(45deg,#0984e3,transparent)!important;
+  width: 1000px !important;
+}
+
+.cardi2{
+  background: linear-gradient(45deg, black,transparent)!important;
   width: 1000px !important;
 }
 
@@ -681,6 +683,7 @@ height: 150px;
   background: url(https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
   color: rgb(189, 189, 255);
 }
+
 .widthscar{
   width: 1000px !important;
 }
