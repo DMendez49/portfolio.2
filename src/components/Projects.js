@@ -1,39 +1,86 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from "./Navbar";
-import { Table, Card, Dropdown, Button, } from "semantic-ui-react";
-import { render } from '@testing-library/react';
+import { withRouter, } from 'react-router-dom';
 import RailsView from './RailsView';
 import ReactView from './ReactView';
-
+import RubyView from './RubyView';
+import JavaView from './JavaView';
+import JavaScriptView from "./JavaScriptView"
+import GroupProjectsView from "./GroupProjectsView"
+import Footer from "../components/Footer"
 
 const Projects = (props) => {
-  const [selection, setSelection] = useState('')
+  const [selection, setSelection] = useState("");
 
-  const options = [
-    { key: 1, text: 'Rails', value: 'rails' },
-    { key: 2, text: 'React', value: 'react' },
-    { key: 3, text: 'Ruby', value: 'ruby' },
-    { key: 4, text: 'Javascript', value: 'javascript' }
-  ]
+  const handleChange = (e) => setSelection(e.target.value)
 
-  const handleChange = (e, { value, }, ) => setSelection(value)
-  const userOptions = () => {
+  const renderRailsView = () => {
+    return (
+      <div>
+        <RailsView />
+      </div>
+    )
+  }
+
+  const renderReactView = () => {
+    return (
+      <div>
+        <ReactView />
+      </div>
+    )
+  }
+
+  const renderRubyView = () => {
+    return (
+      <div>
+        <RubyView />
+      </div>
+    )
+  }
+
+  const renderJavaView = () => {
+    return (
+      <div>
+        <JavaView />
+      </div>
+    )
+  }
+
+  const renderJavaScriptView = () => {
+    return (
+      <div>
+        <JavaScriptView />
+      </div>
+    )
+  }
+
+  const renderGroupProjects = () => {
+    return (
+      <div>
+        <GroupProjectsView />
+      </div>
+    )
+  }
+
+  const renderView = () => {
     switch (selection) {
       case "rails":
-        setSelection('')
+        return renderRailsView()
         break;
-
       case "react":
-        
-        setSelection('')
+        return renderReactView()
         break;
       case "ruby":
-        // { this.renderRuby }
-        setSelection('')
+        return renderRubyView()
         break;
       case "javascript":
-        // { this.renderJavaScript }
-        setSelection('')
+        return renderJavaScriptView()
+        break;
+      case "Java":
+        return renderJavaView()
+        break;
+      case "GroupProjects":
+        return renderGroupProjects()
         break;
     }
   }
@@ -43,73 +90,58 @@ const Projects = (props) => {
       <div >
         <p>
           <select
-            className="projects"
+            id="select"
             class="ui fluid search selection dropdown"
             fluid multiple selection options
             role="combobox"
             style={cardW}
-            value={selection}
             onChange={handleChange}
+            value={selection}
             simple item
-            //figure out on change confusion is between state and hooks 
-            // onChange={(e) => {useState({selection: e.target.value})}}
           >
-            <option>Rails</option>
-            <option>React</option>
-            <option>Ruby</option>
-            <option>Javascript</option>
-            <option>Java</option>
+            <option value="rails" >Rails</option>
+            <option value="react">React</option>
+            <option value="ruby">Ruby</option>
+            <option value="Java">Java</option>
+            <option value="javascript">Javascript</option>
+            <option value="GroupProjects"> Group-Projects</option>
           </select>
         </p>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
       </div>
-
     )
   }
 
-
   return (
     <>
-      <Navbar />
-      <center>
-        <h1>Select a project</h1>
-        <p>the selection renders's a project writtin in that language or technology</p>
-      </center>
-      {/* {selection != '' ? userOptions() : null} */}
-      <br /><br /><br /><br />
-      <center>
-        <div>
+      <div class='card2'>
+        <Navbar />
+        <br /><br /> <br /><br />
+        <center>
+        <br /><br /> <br /><br />
 
-          {/* <Dropdown
-            style={cardW}
-            text='projects'
-            as="h3"
-            fluid multiple selection options={options}
-            onChange={handleChange}
-            value={selection}
-            simple item
-          /> */}
-
-          {renderProjects()}
-        </div>
-      </center>
-
-      <br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br />
-      <center>
-        <Button color='blue' size="big">Render these projects</Button>
-
-        <br /><br />
-        <Card style={cardW}>
-          <br /><br /><br /><br />  <br /><br />
-
-          <h1>Componenets will be rendered inside this card</h1>
-          {/* {render here} */}
-          {/* <RailsView /> */}
-        </Card>
-      </center>
-      <br /><br /><br /><br />
-      <br /><br /><br /><br />
-
+          <h1>
+          Select a Project 
+            </h1>
+            <br /> <br />
+          <div>
+            {/* apple scoller option */}
+            {renderProjects()}
+          </div>
+        </center>
+        <br /><br /><br />
+        {/* <br /><br /><br /> */}
+        <center>
+          <br /><br />
+          <h1>
+            Components will be rendered here.
+            </h1>
+          {renderView()}
+        </center>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <Footer />
+      </div>
     </>
   )
 }
@@ -119,4 +151,4 @@ const cardW = {
   backgroundColor: '#F2F5F7	',
 }
 
-export default Projects;
+export default withRouter(Projects);

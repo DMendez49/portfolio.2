@@ -5,13 +5,18 @@ import { withRouter, } from 'react-router-dom';
 
 const Navbar = () => (
   <div>
-    <div align="left">
-      <div style={aligningRight}>
-        <NavLink to="/"
+    <div
+      align="left">
+      <div 
+      class='navHomeBtn'
+      >
+        <NavLink
+          style={black}
+          to="/"
         >
           <img src="https://img.icons8.com/cotton/2x/laptop-coding.png"
-           height="60"
-           width="60"
+            height="60"
+            width="60"
           >
           </img>
           <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -20,38 +25,54 @@ const Navbar = () => (
       </div>
     </div>
 
-    <div style={cust}>
+    <div 
+    style={cust}
+    class="cust"
+    >
       <div>
-        <NavLink to="/About"
+        <NavLink
+          to="/About"
+          style={black}
         >
           About
     </NavLink>
       </div>
       <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
       <div >
-        <NavLink to="/Projects"
+        <NavLink
+          to="/Projects"
+          style={black}
         >
           Projects
     </NavLink>
       </div>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <div>
+        <NavLink
+          to="/Contact"
+          style={black}
+        >
+          Contact
+    </NavLink>
+      </div>
     </div>
-
+    <hr />
   </div>
 
 )
 
-const aligningRight = {
-  backgroundColor: 'white',
-  paddingTop: '60px',
-  paddingLeft: '105px',
-  color: 'black',
-  fontSize: '23px'
-}
+// const aligningRight = {
+//   backgroundColor: '#0985e34d',
+//   paddingTop: '60px',
+//   paddingLeft: '105px',
+//   color: 'black',
+//   fontSize: '23px'
+// }
 
 const cust = {
   display: 'flex',
   paddingBottom: '55px',
-  backgroundColor: 'white',
+  backgroundColor: '#0985e34d',
   color: 'black',
   fontSize: '30px',
   justifyContent: 'flex-End',
@@ -59,9 +80,9 @@ const cust = {
   fontSize: "23px",
 }
 
-const lift = {
-  display: 'flex',
-  alignItems: 'flex-start'
+
+const black = {
+  color: "black",
 }
 
 export default withRouter(Navbar)

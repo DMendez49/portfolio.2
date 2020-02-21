@@ -51,16 +51,95 @@ body,html{
 .ui.basic.table{
   box-shadow: 0 10px 10px 0 , 0 0 0 1px #d4d4d5 !important;
 }
+
 /* slides */
-.section-top{
-  width: 100%;
-  height: 125vh; 
-  overflow: hidden;
+.section-top {
+  /* width: 100% !important; */
+  height: 125vh;
   position: relative;
   background-image: url("../src/images/coder5.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100% !important;
   animation: slide 15s infinite;
+}
+/* desktop view */
+@keyframes slide {
+  35%{
+    background-image: url("./images/coder2.jpg");
+  }
+  65%{
+    background-image: url("./images/coder.jpg");
+  }
+  85%{
+    background-image: url("./images/SoftwareEngineer.jpg");
+  }
+}
+
+.navHomeBtn{
+  background-color: #0985e34d;
+  padding-top: 60px;
+  padding-left: 105px;
+  color: black;
+  font-size: 23px;
+}
+
+.navHomeBtn2{
+  background-color: black;
+  padding-top: 60px;
+  padding-left: 105px;
+  color: white;
+  font-size: 23px;
+}
+
+.section-topps{
+  width: 750px;
+  height: 400px;
+  position: relative;
+  background-image: url("../src/images/mac2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+  animation: slider 15s infinite;
+}
+
+@keyframes slider {
+  36%{
+    background-image: url("./images/mac.jpeg");
+  }
+  66%{
+    background-image: url("./images/codingDesk.jpg");
+  }
+  89%{
+    background-image: url("./images/codingDesk2.jpg");
+  }
+}
+
+.section-topps2{
+  width: 750px;
+  height: 400px;
+  position: relative;
+  background-image: url("../src/images/smileDPL.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+  animation: slidey 15s infinite;
+}
+
+@keyframes slidey {
+  35%{
+    background-image: url("./images/Dev.png");
+  }
+  65%{
+    background-image: url("./images/launch.jpg");
+  }
+  85%{
+    background-image: url("./images/launch2.jpg");
+  }
+}
+
+.me {
+  height: 100vh;
+  position: relative;
+  background-image: url("./images/Brick.png");
+  background-size: 100% 100% !important;
 }
 
 .content{
@@ -70,6 +149,41 @@ body,html{
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   text-align: center;
+}
+
+.content2{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content3{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  color:white;
+}
+
+.content3 h2{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 16px;
+}
+
+.text{
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  line-height: 24px;
+  margin: 0em !important;
+  text-transform: none !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .content h1{
@@ -101,26 +215,22 @@ p {
   font-size: 20px;
   padding: 10px;
   line-height: 24px;
+  margin: 0em !important;
 }
 
-/* desktop view */
-@keyframes slide {
-  30%{
-    background-image: url("./images/coder2.jpg");
-    width: 1440px;
-  }
-  49%{
-    background-image: url("./images/coder.jpg");
-    width: 1440px;
-  }
-  65%{
-    background-image: url("./images/coder.jpg");
-    width: 1440px;
-  }
-  85%{
-    background-image: url("./images/SoftwareEngineer.jpg");
-    width: 1440px;
-  }
+.P{
+  font-size: 20px;
+  padding: 10px;
+  line-height: 24px;
+  color: black;
+}
+/* scrollbar projects */
+select:hover {    
+  background-color:rgba(173, 216, 230, 0.781) ;
+}
+
+option:hover {
+  background-color:rgba(173, 216, 230, 0.781) !important;
 }
 
 /* scrollbar */
@@ -185,7 +295,7 @@ a {
 
 .main-header h1 span {
   color: #b50d10;
-} 
+}
 
 .colorFont{
   color: #000000;
@@ -195,29 +305,30 @@ a {
   width: 100%;
 }
 
-.card { 
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fs);
-  grid-gap: 2rem;
-  background: #f1f1f1;
-  margin-bottom: 2rem;
+.card {
+  background: linear-gradient(60deg,black,transparent) !important;
+}
+
+.card2{
+  background: linear-gradient(60deg,#0985e34d,transparent) !important;
 }
 
 .card h3{
   margin-bottom: 2rem;
 }
 
-.card img{
-  height: 400px
+.Bobbo img{
+  height:150px !important;
+   width: 140px !important;
 }
 
 .card > div {
   padding: 2em;
 }
- 
+
 .card:nth-child(even) img{
   order: 2;
-} 
+}
 
 .btn{
   display: inline-blockl;
@@ -232,6 +343,17 @@ a {
   opacity: 0.8;
 }
 
+.cust{
+  display: flex;
+  padding-bottom: 55px;
+  background-color: black;
+  color: black;
+  font-size: 30px;
+  justify-content: flex-end;
+  padding-right: 150px;
+  font-size: 23px;
+}
+
 @media(max-width: 700px){
   .card{
     display: block;
@@ -239,21 +361,25 @@ a {
 }
 
 section{
-    margin:0;
-    padding:0;
-    background: rgba(0,0,0,0,0.8);
-    display: grid;
-    place-items: center;
-    text-align: center;
-    font-family: sans-serif;
+  margin:0;
+  padding:0;
+  background: rgba(0,0,0,0,0.8);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 section .scroll{
   display: grid;
   place-items: center;
   text-align: center;
-  border: 10px solid #fff;
+  /* border: 10px solid #fff; */
   margin-bottom: 100px;
+}
+
+.ui.button {
+  padding: 1em .01em !important;
 }
 
 section .scroll span{
@@ -266,58 +392,307 @@ section .scroll span{
   height: 150px;
 }
 
+.Footsie2{
+background: black;
+height: 150px;
+}
+
 .ui.card, .ui.cards>.card {
   box-shadow: 0 10px 10px 0 , 0 0 0 1px #d4d4d5 !important;
 }
 
 /* mobile responsive */
 @media screen and (max-width: 768px) {
+
+  .cardi{
+    background: linear-gradient(45deg,#0984e3,transparent)!important;
+    width: 100% !important;
+  }
+
+  .content{
+    width: 100% !important;
+  }
+
   .section-top {
     width: 100% !important;
   }
 
-@keyframes slide {
-  33%{
-    background-image: url("./images/coder2.jpg");
+  .section-topps{
     width: 100% !important;
-
   }
-  49%{
-    background-image: url("./images/coder.jpg");
-    width: 1440px;
-    width: 100% !important;
 
-  }
-  63%{
-    background-image: url("./images/coder.jpg");
+  .section-topps2{
     width: 100% !important;
+  }
 
-  }
-  83%{
-    background-image: url("./images/SoftwareEngineer.jpg");
+  .Card2{
     width: 100% !important;
-    }
+  }
+
+  .column{
+    width: 100% !important;
+  }
+
+  select{
+    width: 100% !important; 
+  }
+
+  .ui-four-column{
+    width: 100% !important; 
   }
 
   .content {
     width: 100% !important;
   }
+
   .sidebyside{
     width: 100% !important;
   }
+
   P{
     width: 100% !important;
   }
+
   .ui.card:last-child{
     width: 100% !important;
   }
   center{
     width: 100% !important;
   }
+
   .footsie{
     width: 100% !important;
   }
+
   body{
     width: 100% !important;
   }
+
+ p{
+  width: 100% !important;
+ }
+
+ center{
+  width: 100% !important;
+ }
+
 }
+
+/* I Phone size */
+@media screen and (max-width: 375px) {
+
+  .background{
+    width: 100% !important;
+  }
+
+  .ui-basic-table-cardi{
+    width: 100% !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px black !important;
+    border-radius: 10px !important;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black !important;
+    border-radius: 90px !important;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0984e3 !important;
+    border-radius: 15px !important;
+  }
+
+  .cust{
+    padding-top: 30px;
+    display: grid !important;
+  }
+
+  .editForPhone
+  img {
+    width: 100px !important;
+    height: 85px !important;
+  }
+
+  .ui.button {
+    padding: 1em .01em !important;
+  }
+
+  .editForPhoneTwo
+  img {
+    width: 10px !important;
+    height: 100px !important;
+  }
+
+  .content{
+    width: 100% !important;
+    top: 80%;
+    left: 50%;
+    font-size: small;
+  }
+
+  .section-top {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .section-topps2{
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .section-topps{
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .Card2{
+    width: 100% !important;
+  }
+
+  .column{
+    width: 100% !important;
+    padding-top: 30px;
+    display: grid !important;
+  }
+
+  select{
+    width: 100% !important; 
+  }
+
+  .ui-four-column{
+    width: 100% !important; 
+  }
+
+  .content {
+    width: 100% !important;
+    font-size: small;
+  }
+
+  .sidebyside{
+    width: 100% !important;
+  }
+
+  .navHomeBtn{
+    background-color: #0985e34d;
+    padding-top: 60px;
+    padding-left: 65px;
+    color: black !important;
+    font-size: 23px;
+  }
+
+  .navHomeBtn2{
+    background-color: black;
+    padding-top: 60px;
+    padding-left: 65px;
+    color: black;
+    font-size: 23px;
+  }
+
+  P {
+    width: 100% !important;
+  }
+
+  .ui.card:last-child{
+    width: 100% !important;
+  }
+
+  center {
+    width: 100% !important;
+  }
+
+  .footsie {
+    width: 100% !important;
+    font-size: 18px !important;
+    height: 230px;
+  }
+
+  .Footsie2 {
+    background: black;
+    height: 230px;
+    font-size: 18px !important;
+  }
+
+    .black{
+      background-color: black;
+    }
+    
+    body{
+      width: 100% !important;
+    }
+
+    p{
+      width: 100% !important;
+      font-size: small;
+    }
+
+    .text{
+      font-size: small;
+    }
+
+    center{
+      width: 100% !important;
+    }
+
+    Footer{
+      width: 100% !important;
+    }
+
+    Table{
+      width: 100% !important;
+    }
+
+    .sidebyside{
+      font-size: small;
+    }
+
+    h3{
+      font-size: small;
+    }
+}
+
+.ui.selection.dropdown {
+  color: #0984e3 !important;
+}
+
+.cardi{
+  background: linear-gradient(45deg,#0984e3,transparent)!important;
+  width: 1000px !important;
+}
+
+.one{
+  /* background: linear-gradient(45deg,#0984e3,transparent)!important; */
+  background: #0984e3;
+  height: 100px;
+  width: 1000px;
+  box-shadow: 0 10px 10px 0 , 0 0 0 1px #d4d4d5 !important;
+}
+
+/* contact.js */
+.blackground{
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+  /* background-color: rgb(168, 78, 78); */
+  background: url(https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  color: rgb(189, 189, 255);
+}
+.widthscar{
+  width: 1000px !important;
+}
+
+.bigger{
+  height: 100px;
+}
+
+.biggerFont{
+  font-size: 35px;
+}
+
+
+
+
