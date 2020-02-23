@@ -101,7 +101,7 @@ const Home = () => (
                       height="40">
                     </img>
                     Ruby
-              </div>
+                  </div>
                 </span>
               </section>
               <section>
@@ -117,7 +117,7 @@ const Home = () => (
                       height="40">
                     </img>
                     Rails
-              </div>
+                  </div>
                 </span>
               </section>
               <section>
@@ -133,7 +133,7 @@ const Home = () => (
                       height="40">
                     </img>
                     Java
-              </div>
+                  </div>
                 </span>
               </section>
               <section>
@@ -149,7 +149,7 @@ const Home = () => (
                       height="40">
                     </img>
                     JavaScript
-              </div>
+                  </div>
                 </span>
               </section>
               <section>
@@ -165,7 +165,7 @@ const Home = () => (
                       height="40">
                     </img>
                     React
-              </div>
+                  </div>
                 </span>
               </section>
               <section>
@@ -181,7 +181,7 @@ const Home = () => (
                       height="40">
                     </img>
                     Git
-              </div>
+                   </div>
                 </span>
               </section>
               <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -210,13 +210,13 @@ const Home = () => (
         <center>
           <p>
             <br /><br /><br />
-           
+
             <Table
               className="cardi2"
               basic
               className="cardi"
               link="/"
-              >
+            >
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell>Class Id:</Table.HeaderCell>

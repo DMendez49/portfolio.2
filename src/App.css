@@ -203,8 +203,6 @@ body,html{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-
 .sidebyside {
   display: flex;
   flex-direction: row;
@@ -486,6 +484,30 @@ height: 150px;
 /* I Phone size */
 @media screen and (max-width: 375px) {
 
+  .content{
+    position: absolute !important;
+    top: 55% !important;
+    /* left: 25% !important; */
+    transform: translate(-50%, -50%) !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  
+  .content h1{
+    color: white !important;
+    font-size: 30px !important;
+    letter-spacing: 16px !important;
+  }
+  
+  .content a{
+    background: #0984e3 !important;
+    padding: 10px 24px !important;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    border-radius: 20px !important;
+  }
+
   .background{
     width: 100% !important;
   }
@@ -543,7 +565,7 @@ height: 150px;
 
   .section-top {
     width: 100% !important;
-    height: 300px !important;
+    height: 350px !important;
   }
 
   .section-topps2{
