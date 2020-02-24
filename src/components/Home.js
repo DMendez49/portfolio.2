@@ -69,7 +69,7 @@ const Home = () => (
                     >
                     </img>
                     HTML
-              </div>
+                  </div>
                 </span>
               </section>
               <section>
@@ -85,7 +85,7 @@ const Home = () => (
                       height="40">
                     </img>
                     CSS
-              </div>
+                  </div>
                 </span>
               </section>
               <section>

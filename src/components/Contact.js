@@ -23,13 +23,10 @@ const Contact = () => {
       <div class="blackground">
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <center>
-          <Form.Group>
-            <Form
-              onSubmit={handleSubmit}
-            >
+          <Form.Group>            
+            <Form>
               <Card className="widthscar">
                 <div>
-
                   <h1>Full Name:</h1>
                   <Form.Input
                     size="big"
@@ -38,7 +35,6 @@ const Contact = () => {
                     placeholder="Enter Full Name... "
                     onChange={e => setFullName(e.target.value)}
                   >
-
                   </Form.Input>
                   <h1>Email:</h1>
                   <Form.Input
@@ -48,33 +44,29 @@ const Contact = () => {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                   >
-
                   </Form.Input>
                   <h1>Message:</h1>
                   <Form.Input
                     placeholder="Leave me a message..."
-                    size="massive"
+                    size="big"
                     name="message"
                     value={message}
                     onChange={e => setMessage(e.target.value)}
                   >
                   </Form.Input>
-
                 </div>
               </Card>
-            </Form>
-          </Form.Group>
-          <br /> <br /><br /> <br />
-
+              <br /> <br /><br /> <br />
           <Button
             color="blue inverted"
             size="massive"
-            type="submit"
-            // onSubmit={handleSubmit}
+            onSubmit={()=> handleSubmit()}
           >
             Send
-            </Button>
-
+          </Button>
+            </Form>
+          </Form.Group>
+          <br /> <br /><br /> <br />
         </center>
         <br /><br /><br /><br /><br /><br /><br />
       </div>
