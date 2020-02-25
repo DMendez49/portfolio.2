@@ -384,7 +384,6 @@ section .scroll{
   padding: 1em .01em !important; 
 }
 
-
 section .scroll span{
   font-family: sans-serif;
   color: rgb(0, 0, 0);
@@ -482,12 +481,209 @@ height: 150px;
 }
 
 /* I Phone size */
+@media screen and (max-width: 414px) {
+
+  .content{
+    position: absolute !important;
+    top: 55% !important;
+    transform: translate(-50%, -50%) !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  
+  .content h1{
+    color: white !important;
+    font-size: 30px !important;
+    letter-spacing: 16px !important;
+  }
+  
+  .content a{
+    background: #0984e3 !important;
+    padding: 10px 24px !important;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    border-radius: 20px !important;
+  }
+
+  .background{
+    width: 100% !important;
+  }
+
+  .ui-basic-table-cardi{
+    width: 100% !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px black !important;
+    border-radius: 10px !important;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black !important;
+    border-radius: 90px !important;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0984e3 !important;
+    border-radius: 15px !important;
+  }
+
+  .cust{
+    padding-top: 30px;
+    display: grid !important;
+  }
+
+  .editForPhone
+  img {
+    width: 100px !important;
+    height: 85px !important;
+  }
+
+  .customCardlook {
+    padding: 1em .01em !important; 
+ } 
+
+  .editForPhoneTwo
+  img {
+    width: 10px !important;
+    height: 100px !important;
+  }
+
+  .content{
+    width: 100% !important;
+    top: 80%;
+    left: 50%;
+    font-size: small;
+  }
+
+  .section-top {
+    width: 100% !important;
+    height: 350px !important;
+  }
+
+  .section-topps2{
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .section-topps{
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .Card2{
+    width: 100% !important;
+  }
+
+  .column{
+    width: 100% !important;
+    padding-top: 30px;
+    display: grid !important;
+  }
+
+  select{
+    width: 100% !important; 
+  }
+
+  .ui-four-column{
+    width: 100% !important; 
+  }
+
+  .content {
+    width: 100% !important;
+    font-size: small;
+  }
+
+  .sidebyside{
+    width: 100% !important;
+  }
+
+  .navHomeBtn{
+    background-color: #0985e34d;
+    padding-top: 60px;
+    padding-left: 65px;
+    color: black !important;
+    font-size: 23px;
+  }
+
+  .navHomeBtn2{
+    background-color: black;
+    padding-top: 60px;
+    padding-left: 65px;
+    color: black;
+    font-size: 23px;
+  }
+
+  P {
+    width: 100% !important;
+  }
+
+  .ui.card:last-child{
+    width: 100% !important;
+  }
+
+  center {
+    width: 100% !important;
+  }
+
+  .footsie {
+    width: 100% !important;
+    font-size: 18px !important;
+    height: 230px;
+  }
+
+  .Footsie2 {
+    background: black;
+    height: 230px;
+    font-size: 18px !important;
+  }
+
+    .black{
+      background-color: black;
+    }
+    
+    body{
+      width: 100% !important;
+    }
+
+    p{
+      width: 100% !important;
+      font-size: small;
+    }
+
+    .text{
+      font-size: small;
+    }
+
+    center{
+      width: 100% !important;
+    }
+
+    Footer{
+      width: 100% !important;
+    }
+
+    Table{
+      width: 100% !important;
+    }
+
+    .sidebyside{
+      font-size: small;
+    }
+
+}
+
+/* I Phone size */
 @media screen and (max-width: 375px) {
 
   .content{
     position: absolute !important;
     top: 55% !important;
-    /* left: 25% !important; */
     transform: translate(-50%, -50%) !important;
     text-transform: uppercase !important;
     text-align: center !important;
