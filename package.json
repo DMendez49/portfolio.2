@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build":  "cd portfolio && npm install --only=dev && npm install && npm run build && cd ..",
-    "deploy": "serve -s build",
+    "deploy": "cp -a portfolio/build/. public/",
     "heroku-postbuild": "npm run build && npm run deploy && echo 'Portfolio Built'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
