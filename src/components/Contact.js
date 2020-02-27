@@ -11,8 +11,10 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.get(`/api/contact?full_Name=${full_Name}&email${email}&message${message}`)
-      .then(res => {
+    axios.get(`/api/contact`)
+    // axios.get(`/api/contact?full_Name=${full_Name}&email${email}&message${message}`)
+    .then(res => {
+      debugger
         console.log("Email Sent!")
       })
   };
@@ -24,7 +26,7 @@ const Contact = () => {
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <center>
           <Form.Group>            
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Card className="widthscar">
                 <div>
                   <h1>Full Name:</h1>
@@ -60,7 +62,8 @@ const Contact = () => {
           <Button
             color="blue inverted"
             size="massive"
-            onSubmit={()=> handleSubmit()}
+            type="submit"
+            // onSubmit={handleSubmit}
           >
             Send
           </Button>

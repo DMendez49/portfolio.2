@@ -125,12 +125,11 @@ const Projects = (props) => {
             </h1>
             <br /> <br />
           <div>
-            {/* apple scoller option */}
             {renderProjects()}
           </div>
         </center>
         <br /><br /><br />
-        {/* <br /><br /><br /> */}
+        
         <center>
           <br /><br />
           <h1>
