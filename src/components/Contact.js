@@ -1,6 +1,6 @@
 import React, { useState, } from 'react';
-import { Form, Card, Button, Input } from "semantic-ui-react";
 import axios from "axios";
+import { Form, Card, Button, Input } from "semantic-ui-react";
 import Navbar2 from "../components/Navbar2"
 import Footer2 from "../components/Footer2"
 
@@ -25,7 +25,7 @@ const Contact = () => {
       <div class="blackground">
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <center>
-          <Form.Group>            
+          <Form.Group>
             <Form onSubmit={handleSubmit}>
               <Card className="widthscar">
                 <div>
@@ -63,7 +63,6 @@ const Contact = () => {
             color="blue inverted"
             size="massive"
             type="submit"
-            // onSubmit={handleSubmit}
           >
             Send
           </Button>
