@@ -6,14 +6,15 @@ import Footer2 from "../components/Footer2"
 
 const Contact = () => {
   const [full_Name, setFullName] = useState("");
+  const [subject, setsubject] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // axios.get(`/api/contact`)
-    axios.get(`/api/contact?full_Name=${full_Name}&email=${email}&message=${message}`)
-    .then(res => {
+    axios.get(`/api/contact?full_Name=${full_Name}&subject=${subject}&email=${email}&message=${message}`)
+      .then(res => {
         console.log("Email Sent!")
       })
   };
@@ -46,6 +47,15 @@ const Contact = () => {
                     onChange={e => setEmail(e.target.value)}
                   >
                   </Form.Input>
+                  <h1>Subject</h1>
+                  <Form.Input
+                    placeholder="Enter Subject..."
+                    size="big"
+                    name="subject"
+                    value={subject}
+                    onChange={e => setsubject(e.target.value)}
+                  >
+                  </Form.Input>
                   <h1>Message:</h1>
                   <Form.Input
                     placeholder="Leave me a message..."
@@ -58,12 +68,12 @@ const Contact = () => {
                 </div>
               </Card>
               <br /> <br /><br /> <br />
-          <Button
-            color="blue inverted"
-            size="massive"
-            type="submit"
-          >
-            Send
+              <Button
+                color="blue inverted"
+                size="massive"
+                type="submit"
+              >
+                Send
           </Button>
             </Form>
           </Form.Group>
