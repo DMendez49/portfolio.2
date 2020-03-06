@@ -1,6 +1,6 @@
 import React, { useState, } from 'react';
 import axios from "axios";
-import { Form, Card, Button, Input } from "semantic-ui-react";
+import { Form, Card, Button, } from "semantic-ui-react";
 import Navbar2 from "../components/Navbar2"
 import Footer2 from "../components/Footer2"
 
@@ -11,10 +11,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.get(`/api/contact`)
-    // axios.get(`/api/contact?full_Name=${full_Name}&email${email}&message${message}`)
+    // axios.get(`/api/contact`)
+    axios.get(`/api/contact?full_Name=${full_Name}&email=${email}&message=${message}`)
     .then(res => {
-      debugger
         console.log("Email Sent!")
       })
   };
@@ -75,10 +74,6 @@ const Contact = () => {
       <Footer2 />
     </>
   )
-}
-
-const color = {
-  blackground: "rgb(189, 189, 255)",
 }
 
 export default Contact;

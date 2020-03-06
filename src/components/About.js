@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar2 from "./Navbar2";
-import { Table, Card, } from "semantic-ui-react";
+import { Card, } from "semantic-ui-react";
 import like3 from "../images/like3.JPG"
 import Footer2 from "../components/Footer2"
 
@@ -10,20 +10,6 @@ const About = () => (
         <center
             className="card"
         >
-            {/* <div >
-          <section class="card">
-            <img src="https://www.finsmes.com/wp-content/uploads/2019/07/laptop-coding.jpg"
-              width="1045"
-              className=".img"
-              height="350">
-              </img>
-            <div>
-              <p>
-                hello world 1
-             </p>
-            </div>
-          </section>
-        </div> */}
             <div class="me">
                 <div class="content2">
                     <img

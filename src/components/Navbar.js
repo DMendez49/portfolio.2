@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, NavLink, } from 'react-router-dom';
+import { NavLink, } from 'react-router-dom';
 import { withRouter, } from 'react-router-dom';
 
 
@@ -61,14 +61,6 @@ const Navbar = () => (
 
 )
 
-// const aligningRight = {
-//   backgroundColor: '#0985e34d',
-//   paddingTop: '60px',
-//   paddingLeft: '105px',
-//   color: 'black',
-//   fontSize: '23px'
-// }
-
 const cust = {
   display: 'flex',
   paddingBottom: '55px',
@@ -79,7 +71,6 @@ const cust = {
   paddingRight: '150px',
   fontSize: "23px",
 }
-
 
 const black = {
   color: "black",
