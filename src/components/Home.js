@@ -36,7 +36,6 @@ const Home = () => (
                 <Card
                   link="/"
                   className="cardi"
-                // style={cardW}
                 >
                   <br />
                   <p style={black}>
